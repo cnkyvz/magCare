@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ortez ve Protez Bilgilendirme</title>
+</head>
+<body class="index-page">
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="/Resimler/magcare.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+    </div>
+    
+
+    <header>
+        <button class="navbar-button">
+            <img src="Resimler/navigation-bar.png">
+        </button>
+        <nav class="nav-main">
+            <img src="resimler/magCare2.png" alt="Logo">
+            <a href="index.html">Ana Sayfa</a>
+            <div id="protezhakkinda-container" style="position: relative;">
+                <a id="protezhakkinda" href="#">Protez Hakkında</a>
+                <div id="protez-options" class="dropdown-container">
+                    <a href="kol-protezi.html">Kol Protezi</a>
+                    <a href="bacak-protezi.html">Bacak Protezi</a>
+                </div>
+            </div>
+            <a href="blog.html">Hasta Hikayeleri ve Blog</a>
+            <a href="contact.html">İletişim ve Destek</a>
+            <a href="submit_info.html">Submit</a>
+            <a href="sanauygunprotez.html">Sana Uygun Protez</a>
+        </nav>
+        <nav class="nav-links">
+            <a href="register.html">Kayıt Ol</a>
+            <a href="login.html">Giriş Yap</a>
+        </nav>
+    </header>
+    
+    <div class="navbar-container">
+        <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">Protez Hakkında</a>
+            <a href="blog.html">Hasta Hikayeleri ve Blog</a>
+            <a href="contact.html">İletişim ve Destek</a>
+            <a href="submit_info.html">Submit</a>
+            <a href="sanauygunprotez.html">Sana Uygun Protez</a>
+        </nav>
+    </div>
+ 
+    <article class="article-2">
+        <div class="contentAna">
+            <h1>Protez Nedir?</h1>
+            <div class="typed-container">
+                <span class="js-typedjs" id="typed"></span>
+                <span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+            </div>
+            <p>Protezler, vücuttaki eksik veya hasar görmüş bir uzvun yerini almak için tasarlanmış yapay cihazlardır. Bu cihazlar, genellikle fiziksel engellilik, yaralanma veya doğuştan gelen anomaliler gibi durumlarda kullanılır.</p>
+            <a href="#" id="detailsBtn" class="btn">Detayları Öğrenin</a>
+            <a href="#" id="videoBtn" class="btn video-btn">Videoyu İzleyin</a>
+        </div>
+        <div class="imageAna">
+            <img src="Resimler/protez1.jpg" alt="Protez Resmi">
+            <img src="Resimler/protez2.jpg" alt="Protez Resmi">
+            <img src="Resimler/protez3.jpg" alt="Protez Resmi">
+        </div>
+
+    </article>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                strings: ["Güvenli", "Kolay", "Pratik", "Hızlı"],
+                typeSpeed: 60,
+                loop: true,
+                backSpeed: 25,
+                backDelay: 1500
+            };
+            var typed = new Typed('#typed', options);
+        });
+    </script>
+
+    
+     <div class="imageRobotKol">
+        <img src="Resimler/noktalar.png" alt="Noktalar Resmi" class="noktalarImage">
+        <img src="Resimler/robotkol.png" alt="RobotKol Resmi" class="robotKolImage">
+    </div> 
+
+
+    <div class="testimonial-container" id="testimonialContainer">
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 1">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 2">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 2: Hizmet kalitesi harika!</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 3">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 3: Kesinlikle tavsiye ediyorum.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 4">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 4: Fiyatlar uygun, kalite yüksek.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 5">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 5: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 6">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 6: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-avatar">
+                <img src="Resimler/Ekran Resmi 2024-05-29 23.38.19.svg" alt="Customer 7">
+            </div>
+            <div class="testimonial-content">
+                <h2 class="hasta-name">Ad Soyad</h2>
+                <h3 class="meslek-name">Hastalık Adı</h3>
+                <p>Müşteri yorumu 7: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <p>Müşteri yorumu 1: Ürün çok güzel, çok memnun kaldım.</p>
+                <img class="quote-icon" src="Resimler/quote.png" alt="Quote">
+            </div>
+        </div>
+    </div>
+    <div class="dots" id="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <article class="article-3">
+        <div class="contenAna2">
+            <h1>Protezler: Yaşamı Kolaylaştıran Yenilikçi Çözümler</h1>
+        <p>
+            Günümüzde, protezler yaşam kalitesini artıran ve yaşamı kolaylaştıran önemli medikal cihazlardır. Birçok insan için, bir uzvunu kaybetmek ciddi fiziksel ve duygusal zorluklara neden olabilir. Ancak, modern protez teknolojileri sayesinde, bu zorluklar azaltılabilir ve hatta bazı durumlarda ortadan kaldırılabilir.
+        </p>
+        <p>
+            Protez Nedir ve Neden Kullanılır?
+            Protez, bir uzvun kaybı sonucu eksik olan vücut parçasını yerine koymak veya desteklemek için kullanılan yapay bir cihazdır. Uzuv kaybı genellikle doğal bir afet, kazalar, ameliyatlar veya doğuştan olabilir. Protezler, kaybedilen uzvun işlevselliğini geri kazanmaya veya en azından günlük yaşamda işlevsel bir hareketlilik sağlamaya yardımcı olabilir.
+        </p>
+        <p>
+            Protez Çeşitleri ve Kullanım Alanları
+            Protezler, birçok farklı türde gelir ve kullanım alanlarına göre çeşitlilik gösterebilir. İşte bazı yaygın protez türleri:
+            Ekstremite Protezleri: Kol, bacak, el veya ayak gibi ekstremitelerin kaybı durumunda kullanılır. Bu protezler, kullanıcının hareket etmesine ve günlük aktivitelerini sürdürmesine yardımcı olur.
+        </p>
+        <!-- Diğer paragrafları ve içeriği buraya ekleyin -->
+        </div>
+        
+    </article>
+
+    </div>
+
+    <div id="map"></div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC-Pdl-fV5PH3_5W3KXftzhnvVsgGy1zg"
+    async
+    defer
+    ></script>
+
+    <script src="imagefor.js"></script>
+    <script src="navbar.js"></script>
+    <script src="altmenu.js"></script>
+    <script src="musteriYorumlari.js"></script>
+</body>
+</html>
